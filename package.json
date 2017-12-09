@@ -1,0 +1,42 @@
+{
+  "name": "reduce-to-single-digit",
+  "version": "0.1.0",
+  "description": "Reduces any number to the single digit form by addition of the digits together",
+  "main": "build/reduceToSingleDigit.js",
+  "scripts": {
+    "test": "mocha --require babel-register test/**/*.js",
+    "start": "node app/test.js",
+    "dev": "webpack -p --config ./webpack.config.js --progress --color",
+    "build": "npm run clean && webpack -p --config ./webpack.config.production.js --progress --color",
+    "clean": "rimraf ./build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natac13/reduce-to-single-digit.git"
+  },
+  "author": "Sean Campbell <sean.campbell13@gmail.com> (https://seancampbellnatac.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natac13/reduce-to-single-digit/issues"
+  },
+  "homepage": "https://github.com/natac13/reduce-to-single-digit#readme",
+  "dependencies": {
+    "lodash": "4.17.4",
+    "ramda": "0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-stage-1": "6.24.1",
+    "babel-register": "6.26.0",
+    "chai": "4.1.2",
+    "eslint": "4.12.1",
+    "eslint-config-natac13": "1.3.0",
+    "mocha": "4.0.1",
+    "rimraf": "2.6.2",
+    "uglifyjs-webpack-plugin": "1.1.2",
+    "webpack": "3.10.0"
+  }
+}
